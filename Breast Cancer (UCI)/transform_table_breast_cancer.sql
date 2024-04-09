@@ -38,4 +38,4 @@ SELECT
 		WHEN chr_cd_irradiat = 'no' THEN 0
         WHEN chr_cd_irradiat = 'yes' THEN 1
 	END AS chr_cd_irradiat
-FROM breast_cancer.TBL_DADOS;
+FROM breast_cancer.breast_cancer_uci_data;
