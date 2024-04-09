@@ -3,10 +3,13 @@ CREATE SCHEMA dimensional;
 CREATE  TABLE dimensional.DIM_CLIENTE ( 
 	sk_int_cd_cliente    INT    NOT NULL AUTO_INCREMENT  PRIMARY KEY,
 	int_cd_cliente       INT    NOT NULL   ,
-	chr_cd_sku           VARCHAR(100)    NOT NULL   ,
-	chr_nm_produto       VARCHAR(100)    NOT NULL   ,
-	chr_nm_tipo_produto  VARCHAR(100)    NOT NULL   ,
-	chr_nm_marca_produto VARCHAR(100)    NOT NULL   ,
+	chr_nm_cliente       VARCHAR(100)    NOT NULL   ,
+	chr_nm_email         VARCHAR(100)    NOT NULL   ,
+	dat_dt_nascimento    DATE    NOT NULL   ,
+	chr_nm_telefone      VARCHAR(100)    NOT NULL   ,
+	bool_habilitado_campanha BOOLEAN    NOT NULL   ,
+	chr_cd_cep           VARCHAR(100)    NOT NULL   ,
+	chr_nm_cidade        VARCHAR(100)    NOT NULL   ,
 	CONSTRAINT unq_DIM_CLIENTE_sk_int_cd_cliente UNIQUE ( sk_int_cd_cliente ) 
  ) engine=InnoDB;
 
@@ -61,4 +64,3 @@ ALTER TABLE dimensional.FAT_VENDA ADD CONSTRAINT fk_FAT_VENDA_DIM_PRODUTO FOREIG
 ALTER TABLE dimensional.FAT_VENDA ADD CONSTRAINT fk_FAT_VENDA_DIM_PERIODO FOREIGN KEY ( sk_int_cd_periodo ) REFERENCES dimensional.DIM_PERIODO( sk_int_cd_periodo ) ON DELETE CASCADE ON UPDATE CASCADE;
 
 ALTER TABLE dimensional.FAT_VENDA ADD CONSTRAINT fk_FAT_VENDA_DIM_CLIENTE FOREIGN KEY ( sk_int_cd_cliente ) REFERENCES dimensional.DIM_CLIENTE( sk_int_cd_cliente ) ON DELETE CASCADE ON UPDATE CASCADE;
-
