@@ -7,7 +7,7 @@ CREATE  TABLE dimensional.DIM_CLIENTE (
 	chr_nm_email         VARCHAR(100)    NOT NULL   ,
 	dat_dt_nascimento    DATE    NOT NULL   ,
 	chr_nm_telefone      VARCHAR(100)    NOT NULL   ,
-	bool_habilitado_campanha BOOLEAN    NOT NULL   ,
+	chr_bool_habilitado_campanha CHAR(1)    NOT NULL   ,
 	chr_cd_cep           VARCHAR(100)    NOT NULL   ,
 	chr_nm_cidade        VARCHAR(100)    NOT NULL   ,
 	CONSTRAINT unq_DIM_CLIENTE_sk_int_cd_cliente UNIQUE ( sk_int_cd_cliente ) 
