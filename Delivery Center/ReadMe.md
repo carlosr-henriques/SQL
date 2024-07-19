@@ -25,6 +25,7 @@ Os dados foram obtidos no Kaggle, pelo autor [Nosbielcs](https://www.kaggle.com/
 
 # Fluxo de dados do projeto  
 
-![image](https://github.com/user-attachments/assets/934a5932-0d1f-46c7-b14e-221be7307748)
+![image](https://github.com/user-attachments/assets/dc025d69-9b23-4a8f-b09a-a04ad4e8daea)
+
 
 
