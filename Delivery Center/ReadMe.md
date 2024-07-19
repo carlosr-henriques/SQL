@@ -5,7 +5,7 @@ O dataset contém um **cadastro (catálogo + cardápio)** com mais de 900 mil **
 
 # Objetivo  
 
-Utilizar SQL para extrair dados que poderão ser convertidos em visões onde, juntos, formarão um ou mais dasboards, possibilitando olhar a operação através de fatos. 
+Utilizar SQL para extrair dados que poderão ser convertidos em visões onde, juntos, formarão um ou mais dashboards, possibilitando olhar a operação através de fatos. 
 
 # Dados do projeto
 
