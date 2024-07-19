@@ -5,7 +5,11 @@ O dataset contém um **cadastro (catálogo + cardápio)** com mais de 900 mil **
 
 # Objetivo  
 
-Utilizar SQL para extrair dados que poderão ser convertidos em visões onde, juntos, formarão um ou mais dashboards, possibilitando olhar a operação através de fatos. 
+Criar vários de requisitos de informações solicitadas por diferentes áreas da empresa, apresentando as informações requeridas como consultas SQL e dashboards. O projeto é dividido em etapas. Essas etapas podem ser vistas no fluxo de dados.  
+
+Primeiro os dados puros (Raw data) são disponibilizadas - em uma segunda versão apresentarei a extração destes dados com o uso da API do Kaggle, nesse momento os dados foram baixados manualmente. Em seguida, uso e trato os dados no Python (Extract-Transform), e carregado para um bucket no Google Cloud Storage (Load), depois carregando em tabelas no BigQuery (Load). Usarei o ambiente do próprio BigQuery para montar as consultas e as documentarei em um Jupyter Notebook. Por fim, apresentarei as informações graficamente no Looker Studio e Power BI.  
+
+O projeto contará com um arquivo ppt descrevendo de forma resumida as principais informações e insights da Delivery Center.
 
 # Dados do projeto
 
